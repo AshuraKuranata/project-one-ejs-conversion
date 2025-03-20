@@ -4,29 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JN Project One</title>
-    <link rel="stylesheet" href="./css/main.css"/>  
-    <link rel="stylesheet" href="./css/news.css"/>
-    <script defer src="./js/main.js"></script>
-    <script defer src="./js/news.js"></script>
+    <link rel="stylesheet" href="/css/main.css"/>  
+    <link rel="stylesheet" href="/css/news.css"/>
+    <script defer src="/js/main.js"></script>
+    <script defer src="/js/news.js"></script>
 </head>
 <body>
-    <header class="header">
-        <h1>Game News</h1>
-        <label id="hamburger-icon" for="hamburger-btn">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-        <input id="hamburger-btn" type="checkbox" />
-        <nav>
-            <ul class="main-nav">
-                <li id="nav"><a href="main.html">Main</a></li>
-                <li id="nav"><a href="game-about.html">About</a></li>
-                <li id="nav"><a href="game-news.html">News</a></li>
-                <li id="nav"><a href="game-gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('./partials/nav.ejs') %>
     <!--There will be a scroll of articles to scan and select, and there will be a box list that houses "important game updates" that can be scrolled-->
     <div class="news-content">
         <h2>Latest Articles</h2>    <!--STRETCH: Make the Weekly News Updates Grid snap below Latest Articles using @media-->
